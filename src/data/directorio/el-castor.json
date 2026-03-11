@@ -1,0 +1,16 @@
+{
+  "slug": "el-castor",
+  "name": "El Castor",
+  "category": "Restaurantes",
+  "ubicacion": "PB Norte Local 4",
+  "horarios": "Domingo a Jueves 12:00 a 18:00         Viernes a Sábado 12:00 a 22:00",
+  "telefonos": [
+    "8135414807"
+  ],
+  "sitioWeb": "",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b0964c037c93922025_690bca14d78b8a80908a9629_RESTAURANTE%2520EL%2520CASTOR.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3bbf8d418c05ba7c157_Castor.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3bbf8d418c05ba7c157_Castor-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3bbf8d418c05ba7c157_Castor-p-800.png 800w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3bbf8d418c05ba7c157_Castor-p-1080.png 1080w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3bbf8d418c05ba7c157_Castor.avif 2644w"
+}

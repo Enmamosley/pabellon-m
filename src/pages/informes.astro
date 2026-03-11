@@ -1,0 +1,82 @@
+---
+import Layout from '../layouts/Layout.astro';
+import informes from '../data/informes.json';
+
+const serviceImages = [
+  '/images/691668ceda4dce0edf58052e_Escenario_GNP-Pabello_n_M-ABR24-19.jpg',
+  '/images/68efe4143ee020da527b37b4_Pabello_n_M__Interiores_-JUL25-12.avif',
+  '/images/68efe4141454578cc9291417_Pabello_n_M__Interiores_-JUL25-02.avif',
+];
+
+const colorSchemes = ['color-scheme-1', 'color-scheme-2', 'color-scheme-3'];
+---
+
+<Layout title="Informes — Pabellón M">
+  <!-- Header 64 -->
+  <header class="section_header64 color-scheme-3">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="header64_component">
+            <div class="text-align-center">
+              <div class="max-width-large align-center">
+                <div class="margin-bottom margin-small">
+                  <h1 class="heading-style-h1">Sé parte de este<br/>gran destino</h1>
+                </div>
+                <p class="text-size-medium">{informes.hero.subtitle}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portfolio 23 -->
+  <section class="section_portfolio23 color-scheme-1">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="padding-section-medium padding-bottom">
+            <div class="portfolio23_list-wrapper">
+              <div class="portfolio23_list">
+                {informes.services.map((service, i) => (
+                  <div class={`portfolio23_item ${colorSchemes[i] || 'color-scheme-1'}`}>
+                    <div class="portfolio23_content-left">
+                      <div class="portfolio23_title-wrapper">
+                        <h3 class="heading-style-h2 text-color-white">{service.title}</h3>
+                      </div>
+                      <div class="margin-top margin-medium">
+                        <div class="portfolio_item-content">
+                          {service.features.map((feat) => (
+                            <div class="portfolio_item-info">
+                              <div class="text-weight-bold">{feat.title}</div>
+                              <div>{feat.description}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div class="margin-top margin-medium">
+                        <div class="button-group">
+                          <a href="/contacto" class="button">Contáctanos</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="portfolio23_image-wrapper">
+                      <img
+                        src={serviceImages[i]}
+                        alt=""
+                        loading="lazy"
+                        class="portfolio23_image"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

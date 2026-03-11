@@ -1,0 +1,14 @@
+{
+  "slug": "telcel",
+  "name": "Telcel",
+  "category": "Comercios",
+  "ubicacion": "E3 Norte Local 39",
+  "horarios": "Lunes a Domingo 10:00 a 20:00",
+  "telefonos": [],
+  "sitioWeb": "https://www.telcel.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b209ed57f18df46a2e_690bcb9c80dfd32eefed99bc_WhatsApp%2520Image%25202025-10-30%2520at%252012.00.43%2520PM%2520(1).webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3eb822ea6f1ea9cb0bc_Telcel.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3eb822ea6f1ea9cb0bc_Telcel-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3eb822ea6f1ea9cb0bc_Telcel.avif 1402w"
+}

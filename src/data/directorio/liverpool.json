@@ -1,0 +1,14 @@
+{
+  "slug": "liverpool",
+  "name": "Liverpool",
+  "category": "Comercios",
+  "ubicacion": "PB Puente Local",
+  "horarios": "Lunes a Domingo 11:00 a 21:00",
+  "telefonos": [],
+  "sitioWeb": "https://www.liverpool.com.mx/tienda/home",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b1b786ac60c66d7a08_69163fe645906082eda9120e_unnamed%2520(1).webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efffdc5479e6892e89e469_liverpool.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efffdc5479e6892e89e469_liverpool-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efffdc5479e6892e89e469_liverpool.avif 1018w"
+}

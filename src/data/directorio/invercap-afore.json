@@ -1,0 +1,16 @@
+{
+  "slug": "invercap-afore",
+  "name": "InverCap",
+  "category": "Servicios",
+  "ubicacion": "E3 Norte Local 32",
+  "horarios": "Lunes a Viernes 9:00 a 18:00",
+  "telefonos": [
+    "5547478000"
+  ],
+  "sitioWeb": "https://invercap.com.mx/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b1bc1fa4d52a838f8d_690a8b69b5cf862c7d8a4cd4_AFORE%2520INVERCAP.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3463e0bf6dcf98ba15a_InverCap.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3463e0bf6dcf98ba15a_InverCap-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3463e0bf6dcf98ba15a_InverCap-p-800.png 800w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe3463e0bf6dcf98ba15a_InverCap.avif 2468w"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "tigre-tienda",
+  "name": "Tigre Tienda",
+  "category": "Comercios",
+  "ubicacion": "PB Local 9",
+  "horarios": "Lunes a Domingo 11:00 a 20:00",
+  "telefonos": [
+    "8183437420"
+  ],
+  "sitioWeb": "https://tigretienda.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b21175811d551e6a80_690bcbbca28fcff7cac8c6f9_WhatsApp%2520Image%25202025-10-30%2520at%252012.00.32%2520PM.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe493b33bcaf07ad6a34e_TT_1.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe493b33bcaf07ad6a34e_TT_1-p-500.avif 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe493b33bcaf07ad6a34e_TT_1.avif 1466w"
+}

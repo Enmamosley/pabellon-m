@@ -1,0 +1,16 @@
+{
+  "slug": "uber",
+  "name": "UBER",
+  "category": "Servicios",
+  "ubicacion": "E1 Norte Local 4",
+  "horarios": "Lunes a Viernes de 9:00 a 18:00 Sábado de 9:00 a 14:00 Domingo cerrado",
+  "telefonos": [
+    "8184648924"
+  ],
+  "sitioWeb": "https://www.uber.com/mx/es/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b352797ae5b0f0f88b_690bcbd7e9261be9bc878e82_UBER.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe2c033f5b444fa11735c_Uber.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe2c033f5b444fa11735c_Uber-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe2c033f5b444fa11735c_Uber.avif 1896w"
+}

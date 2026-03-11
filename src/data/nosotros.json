@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": "Transformandola vida urbana",
+    "subtitle": "Pabellón M nació con la visión de revitalizar el corazón de la ciudad a través de un desarrollo arquitectónico contemporáneo y estratégico."
+  },
+  "intro": "Desarrollado por IDN (Certificado por Great Place to Work®), desde su apertura, Pabellón M se ha consolidado como un punto de encuentro dinámico y versátil, pensado para ofrecer una experiencia integral que conecta a las personas con ideas, negocios y momentos únicos.",
+  "features": [
+    {
+      "title": "Distinción que nos respalda",
+      "description": "Pabellón M ha sido reconocido a nivel nacional por su innovación, diseño y aporte al entorno urbano. Resultado de una evaluación integral que consideró impacto social, accesibilidad, tecnología, experiencia del usuario y modelo de negocio."
+    },
+    {
+      "title": "Reconocimientos",
+      "description": "Recibió el premio a la excelencia en obra arquitectónica, un reconocimiento de gran prestigio por la revista Obras de Grupo Expansión en 2017."
+    },
+    {
+      "title": "Seguridad",
+      "description": "El complejo ha sido certificado por varios años consecutivos en protección civil, sobresaliendo por sus protocolos y simulacros de prevención."
+    }
+  ],
+  "venues": [
+    {
+      "title": "Escenario GNP Seguros",
+      "description": "El hogar de los grandes conciertos y espectáculos.",
+      "link": "https://www.escenariognpseguros.com/"
+    },
+    {
+      "title": "Centro de Convenciones",
+      "description": "Versatilidad y modernidad para tus eventos de negocio.",
+      "link": "https://www.convencionespabellonm.com/"
+    },
+    {
+      "title": "Foro Corona",
+      "description": "Un espacio íntimo para vivir la música de cerca.",
+      "link": "https://www.forotims.com/"
+    }
+  ],
+  "eventsHeading": "El mejor escenario para tus eventos",
+  "eventsDescription": "Desde convenciones hasta conciertos y espectáculos, aquí encuentras espacios versátiles para crear experiencias inolvidables."
+}

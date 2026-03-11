@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { localImage } from '../utils/image';
+
+const businessFiles = Object.values(
+  import.meta.glob('../data/directorio/*.json', { eager: true })
+) as Array<{ default?: any } & Record<string, any>>;
+
+const businesses = businessFiles.map((mod) => mod.default || mod)
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const categories = [
+  { key: 'Todo', label: 'Todo' },
+  { key: 'Comercios', label: 'Comercios' },
+  { key: 'Servicios', label: 'Servicios' },
+  { key: 'Restaurantes', label: 'Restaurantes' },
+  { key: 'Entretenimiento', label: 'Entretenimiento' },
+];
+---
+
+<Layout title="Directorio — Pabellón M">
+  <!-- Header 64 -->
+  <header class="section_header64 color-scheme-3">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="header64_component">
+            <div class="text-align-center">
+              <div class="max-width-large align-center">
+                <div class="margin-bottom margin-small">
+                  <h1 class="heading-style-h1">Los negocios que nos conectan a diario</h1>
+                </div>
+                <p class="text-size-medium">Explora la variedad de comercios, servicios y restaurantes disponibles para ti.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header64_color-wrapper">
+      <div class="header100_color is-blue"></div>
+      <div class="header100_color is-green"></div>
+      <div class="header100_color is-orange"></div>
+      <div class="header100_color is-purple"></div>
+      <div class="header100_color is-red"></div>
+      <div class="header100_color is-dark"></div>
+    </div>
+  </header>
+
+  <!-- Career 19 - Directory -->
+  <section class="section_career19 color-scheme-1">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="padding-section-medium padding-bottom">
+            <div class="career19_component">
+              <div class="career19_tabs">
+                <div class="category-filter-menu no-scrollbar">
+                  {categories.map((cat, i) => (
+                    <a
+                      data-tab={cat.key}
+                      class:list={['category-filter-link', i === 0 && 'is-active']}
+                    >
+                      <div>{cat.label}</div>
+                    </a>
+                  ))}
+                </div>
+
+                <div class="career19_tab-content">
+                  <div class="faq2_component">
+                    <div role="list" class="faq2_list">
+                      {businesses.map((biz) => (
+                        <div role="listitem" class="faq2_accordion" data-category={biz.category}>
+                          <div id={biz.slug} class="faq2_question">
+                            <div class="heading-style-h4">{biz.name}</div>
+                            <div class="faq2_icon-wrapper">
+                              <div class="icon-embed-xsmall">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                                  <path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="faq2_answer" style="width:100%;height:0px;overflow:hidden;">
+                            <div class="directory_item-media">
+                              <div class="directory_item-image-wrapper">
+                                <img loading="lazy" src={localImage(biz.foto)} alt={biz.name} class="directory_item-image" />
+                              </div>
+                            </div>
+                            <div class="directory_item-content">
+                              {biz.logo && (
+                                <img loading="lazy" src={localImage(biz.logo)} alt="" class="icon-height-medium" />
+                              )}
+                              {biz.ubicacion && (
+                                <div class="directory_item-info">
+                                  <div class="text-weight-bold">Ubicación</div>
+                                  <div>{biz.ubicacion}</div>
+                                </div>
+                              )}
+                              {biz.horarios && (
+                                <div class="directory_item-info">
+                                  <div class="text-weight-bold">Horarios</div>
+                                  <div class="w-richtext"><p>{biz.horarios}</p></div>
+                                </div>
+                              )}
+                              {biz.telefonos && biz.telefonos.length > 0 && (
+                                <div class="directory_item-info">
+                                  <div class="text-weight-bold">Teléfonos</div>
+                                  <div class="button-group">
+                                    {biz.telefonos.map((tel: string) => (
+                                      <a href={`tel:${tel}`}>{tel}</a>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+                              <div class="margin-top margin-xsmall">
+                                <div class="button-group">
+                                  {biz.mapa && (
+                                    <a href={biz.mapa} target="_blank" rel="noopener noreferrer" class="button is-alternate">Obtener direcciones</a>
+                                  )}
+                                  {biz.sitioWeb && (
+                                    <a href={biz.sitioWeb} target="_blank" rel="noopener noreferrer" class="button is-secondary">Sitio Web</a>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Category filter tabs
+  const tabs = document.querySelectorAll<HTMLElement>('.category-filter-link');
+  const accordions = document.querySelectorAll<HTMLElement>('.faq2_accordion');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => t.classList.remove('is-active'));
+      tab.classList.add('is-active');
+      const cat = tab.dataset.tab;
+      accordions.forEach((acc) => {
+        if (cat === 'Todo' || acc.dataset.category === cat) {
+          acc.style.display = '';
+        } else {
+          acc.style.display = 'none';
+          // Close if hidden
+          const answer = acc.querySelector('.faq2_answer') as HTMLElement;
+          if (answer) { answer.style.height = '0px'; }
+          acc.classList.remove('is-open');
+        }
+      });
+    });
+  });
+
+  // Accordion toggle
+  document.querySelectorAll<HTMLElement>('.faq2_question').forEach((q) => {
+    q.addEventListener('click', () => {
+      const accordion = q.closest('.faq2_accordion') as HTMLElement;
+      const answer = accordion.querySelector('.faq2_answer') as HTMLElement;
+      if (!accordion || !answer) return;
+
+      if (accordion.classList.contains('is-open')) {
+        answer.style.height = '0px';
+        accordion.classList.remove('is-open');
+      } else {
+        answer.style.height = 'auto';
+        accordion.classList.add('is-open');
+      }
+    });
+  });
+</script>

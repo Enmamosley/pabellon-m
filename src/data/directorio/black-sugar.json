@@ -1,0 +1,16 @@
+{
+  "slug": "black-sugar",
+  "name": "Black Sugar",
+  "category": "Comercios",
+  "ubicacion": "PB Local 16",
+  "horarios": "Lunes a Domingo de 10:00 a 21:00",
+  "telefonos": [
+    "8124477785"
+  ],
+  "sitioWeb": "https://blacksugar.mx/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b078d6d6a1df1bf3ce_690a8c1af196ba7913c9417f_BLACK%2520SUGAR.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe46c2e6f0600b1af90e1_BS.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe46c2e6f0600b1af90e1_BS-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe46c2e6f0600b1af90e1_BS.avif 1999w"
+}

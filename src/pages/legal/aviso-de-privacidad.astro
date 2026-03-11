@@ -1,0 +1,19 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import aviso from '../../data/aviso-de-privacidad.json';
+
+const paragraphs = aviso.content.split('\n\n').filter(Boolean);
+---
+
+<Layout title="Aviso de Privacidad — Pabellón M">
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl md:text-4xl font-bold mb-10">{aviso.title}</h1>
+      <div class="prose prose-gray max-w-none space-y-4">
+        {paragraphs.map((p) => (
+          <p class="text-gray-700 leading-relaxed">{p}</p>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

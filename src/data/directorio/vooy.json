@@ -1,0 +1,16 @@
+{
+  "slug": "vooy",
+  "name": "Vooy",
+  "category": "Servicios",
+  "ubicacion": "E1 Norte Local 6",
+  "horarios": "Lunes a Viernes de 9:00 a 19:00 Sábados de 9:00 a 13:00",
+  "telefonos": [
+    "8127228888"
+  ],
+  "sitioWeb": "https://vooyapp.com.mx/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b3548c34e6bb490acb_68f00a9e99157116a825b6d5_vooy.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b3548c34e6bb490ac7_68efe31bacddc915f8255a3c_Vooy.webp",
+  "logoSrcset": ""
+}

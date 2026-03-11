@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "El punto de encuentro en Monterrey",
+    "subtitle": "Negocios, entretenimiento, comercios y servicios en un solo espacio."
+  },
+  "sections": [
+    {
+      "title": "Espacios publicitarios",
+      "description": "Lleva tu marca a miles de personas cada día en un punto estratégico de la ciudad.",
+      "link": "/informes",
+      "image": "Pabello_n_M__Interiores_-JUL25-01.avif"
+    },
+    {
+      "title": "Locales y oficinas",
+      "description": "El lugar ideal para hacer crecer tu empresa en un entorno moderno.",
+      "link": "/informes",
+      "image": "Pabello_n_M__Interiores_-JUL25-02.avif"
+    },
+    {
+      "title": "Comercios y servicios",
+      "description": "Todo lo que necesitas para tu día a día en un mismo destino.",
+      "link": "/informes",
+      "image": ""
+    }
+  ],
+  "cta": {
+    "heading": "Tu ideas merecen un gran espacio",
+    "description": "Explora un destino que conecta personas, ideas y oportunidades. Conoce más y sé parte.",
+    "buttons": [
+      {
+        "text": "Contáctanos",
+        "link": "/contacto"
+      },
+      {
+        "text": "Ver directorio",
+        "link": "/directorio"
+      }
+    ]
+  },
+  "secondaryHeading": "Donde la vida urbana cobra sentido",
+  "secondaryIntro": "Pabellón M es un desarrollo contemporáneo que reúne negocios, entretenimiento, comercios y servicios en un punto de encuentro multifuncional que conecta personas, ideas y experiencias.",
+  "secondarySubheading": "Mucho más que un espacio",
+  "secondaryDescription": "Más allá de lo cotidiano, un lugar donde los negocios conviven con el entretenimiento y los servicios se vuelven parte de la vida diaria."
+}

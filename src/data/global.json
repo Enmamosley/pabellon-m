@@ -1,0 +1,39 @@
+{
+  "address": "Av. Constitución, entre Juárez y Garibaldi, Col. Centro, Monterrey, N.L. México 64000",
+  "mapLink": "https://maps.app.goo.gl/VM1KicLb787yKnTu9",
+  "phone": "+52 (81) 2090 8800",
+  "phoneHref": "tel:+528120908800",
+  "email": "contacto@pabellonm.com",
+  "emailHref": "mailto:contacto@pabellonm.com?subject=Contacto%20%7C%20Pabell%C3%B3n%20M.",
+  "tagline": "Negocios, entretenimiento, comercios y servicios en un solo espacio.",
+  "socials": [],
+  "logo": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/68efd19e84d065f59630f65c_da1ff5f70fbd6dae5031f49900d0b798_pm_logo-white.svg",
+  "copyright": "© 2026 Pabellón M. Todos los derechos reservados.",
+  "developedBy": {
+    "name": "IDN",
+    "certifiedAs": "Great Place to Work®"
+  },
+  "privacyLink": "/legal/aviso-de-privacidad",
+  "nav": [
+    {
+      "text": "Inicio",
+      "href": "/"
+    },
+    {
+      "text": "Nosotros",
+      "href": "/nosotros"
+    },
+    {
+      "text": "Directorio",
+      "href": "/directorio"
+    },
+    {
+      "text": "Informes",
+      "href": "/informes"
+    },
+    {
+      "text": "Contacto",
+      "href": "/contacto"
+    }
+  ]
+}

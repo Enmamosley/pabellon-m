@@ -1,0 +1,16 @@
+{
+  "slug": "televisa",
+  "name": "Televisa Monterrey",
+  "category": "Servicios",
+  "ubicacion": "N3 Norte Local 301",
+  "horarios": "Lunes a Domingo de 9:00 a 19:00",
+  "telefonos": [
+    "8140404000"
+  ],
+  "sitioWeb": "https://www.televisa.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b28cda38a8275b7a12_690bcbabb2040defe01e948a_TELEVISA.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68f00058941420025d376807_Televisa.svg",
+  "logoSrcset": ""
+}

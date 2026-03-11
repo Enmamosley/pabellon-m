@@ -1,0 +1,16 @@
+{
+  "slug": "bbva-sucursal",
+  "name": "BBVA",
+  "category": "Servicios",
+  "ubicacion": "E3 Norte Local 37",
+  "horarios": "Lunes a Viernes 8:30 a 16:00",
+  "telefonos": [
+    "8183450830"
+  ],
+  "sitioWeb": "https://www.bbva.mx/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b0c7667436397b04f7_690a8bee733e2fecd4b3b307_BBVA.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe363a7ba0d2286e77de7_BBVA.avif",
+  "logoSrcset": ""
+}

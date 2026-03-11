@@ -1,0 +1,256 @@
+{
+  "hero": {
+    "title": "El corazón de cada nivel",
+    "subtitle": "Explora cada nivel y localiza rápidamente comercios, restaurantes y servicios."
+  },
+  "levels": [
+    {
+      "tabId": "N7",
+      "name": "N7",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db12e7de708ab14750_n7.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db12e7de708ab14750_n7-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db12e7de708ab14750_n7.avif 1200w",
+      "locales": [
+        {
+          "number": "701",
+          "name": "Cinemex"
+        },
+        {
+          "number": "702",
+          "name": "Secretaría de Desarrollo Urbano"
+        }
+      ]
+    },
+    {
+      "tabId": "N5",
+      "name": "N5",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb9_n5.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb9_n5-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb9_n5-p-800.png 800w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb9_n5.avif 1200w",
+      "locales": [
+        {
+          "number": "501",
+          "name": "Centro de Convenciones"
+        },
+        {
+          "number": "502",
+          "name": "IZA"
+        }
+      ]
+    },
+    {
+      "tabId": "N4",
+      "name": "N4",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db9f10f602e1cd2da0_n4.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db9f10f602e1cd2da0_n4-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db9f10f602e1cd2da0_n4.avif 1200w",
+      "locales": [
+        {
+          "number": "402",
+          "name": "Secretaria de Innovación y Gobierno Abierto"
+        },
+        {
+          "number": "403",
+          "name": "IZA"
+        }
+      ]
+    },
+    {
+      "tabId": "N3",
+      "name": "N3",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db0c902052642037bf_74e7e4783264e9b255f15c7bb5fdf2bd_n3.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db0c902052642037bf_74e7e4783264e9b255f15c7bb5fdf2bd_n3-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db0c902052642037bf_74e7e4783264e9b255f15c7bb5fdf2bd_n3.avif 1200w",
+      "locales": [
+        {
+          "number": "301",
+          "name": "Televisa Monterrey"
+        },
+        {
+          "number": "302",
+          "name": "Sky Kids"
+        },
+        {
+          "number": "303",
+          "name": "Oficinas Pabellón M"
+        }
+      ]
+    },
+    {
+      "tabId": "N2",
+      "name": "N2",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db40993afb0238d60f_n2.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db40993afb0238d60f_n2-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db40993afb0238d60f_n2.avif 1200w",
+      "locales": [
+        {
+          "number": "1",
+          "name": "Deloitte - Centro de Excelencia"
+        },
+        {
+          "number": "11",
+          "name": "OXXO"
+        },
+        {
+          "number": "12",
+          "name": "Secretaría de Relaciones Exteriores (Oficina de Pasaportes)"
+        },
+        {
+          "number": "21",
+          "name": "Tactik"
+        }
+      ]
+    },
+    {
+      "tabId": "PB",
+      "name": "PB",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dce24bfdf754ad2429_pb.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dce24bfdf754ad2429_pb-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dce24bfdf754ad2429_pb-p-800.png 800w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dce24bfdf754ad2429_pb.avif 1200w",
+      "locales": [
+        {
+          "number": "1",
+          "name": "SWBC"
+        },
+        {
+          "number": "2",
+          "name": "Foro Corona"
+        },
+        {
+          "number": "3",
+          "name": "El Muelle de al lado"
+        },
+        {
+          "number": "4",
+          "name": "El Castor"
+        },
+        {
+          "number": "6",
+          "name": "Restaurante Latino"
+        },
+        {
+          "number": "9",
+          "name": "Tigre Tienda"
+        },
+        {
+          "number": "10",
+          "name": "Mac Store"
+        },
+        {
+          "number": "12",
+          "name": "Starbucks"
+        },
+        {
+          "number": "13",
+          "name": "Camposanto"
+        },
+        {
+          "number": "14",
+          "name": "Movilidad y Espacio Público (Municipio de Monterrey)"
+        },
+        {
+          "number": "15",
+          "name": "Lobby Fiesta Americana"
+        },
+        {
+          "number": "16",
+          "name": "Black Sugar"
+        },
+        {
+          "number": "17",
+          "name": "Yogufrut"
+        },
+        {
+          "number": "18",
+          "name": "El Tiros Caps"
+        },
+        {
+          "number": "19",
+          "name": "Tim Hortons"
+        }
+      ]
+    },
+    {
+      "tabId": "E1",
+      "name": "E1",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db774baab89c6989b1_e1.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db774baab89c6989b1_e1-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db774baab89c6989b1_e1-p-800.png 800w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db774baab89c6989b1_e1.avif 1200w",
+      "locales": [
+        {
+          "number": "1",
+          "name": "Didi"
+        },
+        {
+          "number": "4",
+          "name": "UBER"
+        },
+        {
+          "number": "5",
+          "name": "Tim Hortons: Test Kitchen"
+        },
+        {
+          "number": "6",
+          "name": "Vooy"
+        },
+        {
+          "number": "8",
+          "name": "Smart Fit"
+        }
+      ]
+    },
+    {
+      "tabId": "E2",
+      "name": "E2",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb2_e2.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb2_e2-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5db296049c965f4cbb2_e2.avif 1200w",
+      "locales": [
+        {
+          "number": "20",
+          "name": "Advenio"
+        },
+        {
+          "number": "27",
+          "name": "Notaría 29"
+        },
+        {
+          "number": "28",
+          "name": "Centro de Innovación y Emprendimiento (Municipio de Monterrey)"
+        }
+      ]
+    },
+    {
+      "tabId": "E3",
+      "name": "E3",
+      "mapImage": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dbba89e51e358a005f_e3.avif",
+      "mapImageSrcset": "https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dbba89e51e358a005f_e3-p-500.png 500w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dbba89e51e358a005f_e3-p-800.png 800w, https://cdn.prod.website-files.com/68ef0ffdf572c270a5ec825f/6998a5dbba89e51e358a005f_e3.avif 1200w",
+      "locales": [
+        {
+          "number": "31",
+          "name": "OXXO"
+        },
+        {
+          "number": "32",
+          "name": "InverCap"
+        },
+        {
+          "number": "33",
+          "name": "HSBC"
+        },
+        {
+          "number": "34",
+          "name": "BBVA Hipotecaria"
+        },
+        {
+          "number": "35",
+          "name": "Banamex"
+        },
+        {
+          "number": "37",
+          "name": "BBVA"
+        },
+        {
+          "number": "38",
+          "name": "AT&T"
+        },
+        {
+          "number": "39",
+          "name": "Telcel"
+        }
+      ]
+    }
+  ]
+}

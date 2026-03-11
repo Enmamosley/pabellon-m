@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro';
+import home from '../data/home.json';
+
+const marqueeTop = [
+  { name: 'Smart Fit', slug: 'smart-fit', img: '6998a3b211721d6ad4f5f4b9_68f00af6eda51ae657bd8caa_Pabellon_MTY_18.webp' },
+  { name: 'Sky Kids', slug: 'sky-kids', img: '6998a3b2b156d506acd82a81_68f0046dec5dcd156e6f957b_pantalla_013.webp' },
+  { name: 'El Tiros Caps', slug: 'tiros-caps', img: '6998a3b1ab0970f9fc9b456b_690bca30e412f09d8ffe75d3_TIROS_20CAPS.webp' },
+  { name: 'UBER', slug: 'uber', img: '6998a3b352797ae5b0f0f88b_690bcbd7e9261be9bc878e82_UBER.webp' },
+  { name: 'Cinemex', slug: 'cinemex', img: '68eff517b94a13b43c784cb6_unnamed__7_.avif' },
+  { name: 'Camposanto', slug: 'camposanto', img: '6998a3b0ff85d61e4cf1fc7c_690a8c2ecde95248b77c5265_CAMPOSANTO.webp' },
+  { name: 'El Castor', slug: 'el-castor', img: '6998a3b0964c037c93922025_690bca14d78b8a80908a9629_RESTAURANTE_20EL_20CASTOR.webp' },
+  { name: 'Tim Hortons', slug: 'tim-hortons', img: '6998a3b232bb2d73ec209d52_690bcbcd70e0baabb374fddd_TIM.webp' },
+  { name: 'Televisa Monterrey', slug: 'televisa', img: '6998a3b28cda38a8275b7a12_690bcbabb2040defe01e948a_TELEVISA.webp' },
+  { name: 'Banamex', slug: 'banamex', img: '6998a3b06bfa71e155157cba_690a8c87ae1fafb1070fe0a1_WhatsApp_20Image_202025-10-30_20at_2012.00.44_20PM_20_3_.webp' },
+  { name: 'Vooy', slug: 'vooy', img: '6998a3b3548c34e6bb490acb_68f00a9e99157116a825b6d5_vooy.webp' },
+  { name: 'Black Sugar', slug: 'black-sugar', img: '6998a3b078d6d6a1df1bf3ce_690a8c1af196ba7913c9417f_BLACK_20SUGAR.webp' },
+  { name: 'Liverpool', slug: 'liverpool', img: '6998a3b1b786ac60c66d7a08_69163fe645906082eda9120e_unnamed_20_1_.webp' },
+  { name: 'AT&T', slug: 'at-t', img: '6998a3b0939f81e3256866be_690a8b5483a193885e8d7d5d_AT_26T.webp' },
+  { name: 'BBVA', slug: 'bbva-sucursal', img: '6998a3b0c7667436397b04f7_690a8bee733e2fecd4b3b307_BBVA.webp' },
+  { name: 'Escenario GNP', slug: 'escenario-gnp', img: '68eff2d03f79b9ba9e33dd9a_Escenario_Auditorio_Pabello_n_M.avif' },
+  { name: 'Mac Store', slug: 'mac-store', img: '6998a3b1f6286185715f3c38_690bca79eb0245ee11320603_WhatsApp_20Image_202025-10-30_20at_2012.00.31_20PM_20_2_.webp' },
+  { name: 'Telcel', slug: 'telcel', img: '6998a3b209ed57f18df46a2e_690bcb9c80dfd32eefed99bc_WhatsApp_20Image_202025-10-30_20at_2012.00.43_20PM_20_1_.webp' },
+  { name: 'Foro Corona', slug: 'foro-corona', img: '' },
+  { name: 'Restaurante Latino', slug: 'restaurante-latino', img: '6998a3b1825f37590e6c644d_690bcb0370e0baabb374d8e0_RESTAURANTE_20LATINO.webp' },
+];
+
+const marqueeBottom = [
+  { name: 'El Castor', slug: 'el-castor', img: '6998a3b0964c037c93922025_690bca14d78b8a80908a9629_RESTAURANTE_20EL_20CASTOR.webp' },
+  { name: 'Liverpool', slug: 'liverpool', img: '6998a3b1b786ac60c66d7a08_69163fe645906082eda9120e_unnamed_20_1_.webp' },
+  { name: 'Black Sugar', slug: 'black-sugar', img: '6998a3b078d6d6a1df1bf3ce_690a8c1af196ba7913c9417f_BLACK_20SUGAR.webp' },
+  { name: 'AT&T', slug: 'at-t', img: '6998a3b0939f81e3256866be_690a8b5483a193885e8d7d5d_AT_26T.webp' },
+  { name: 'Yogufrut', slug: 'yogufrut', img: '6998a3b3e00acc9f6dde65d5_690bcc24d8be9d96960e3a00_YOGUFRUT.webp' },
+  { name: 'Banamex', slug: 'banamex', img: '6998a3b06bfa71e155157cba_690a8c87ae1fafb1070fe0a1_WhatsApp_20Image_202025-10-30_20at_2012.00.44_20PM_20_3_.webp' },
+  { name: 'Advenio', slug: 'advenio', img: '6998a3b03b311806951a0b83_690a8b4b6448185c6cee36e5_ADVENIO.webp' },
+  { name: 'Foro Corona', slug: 'foro-corona', img: '' },
+  { name: 'Tim Hortons', slug: 'tim-hortons', img: '6998a3b232bb2d73ec209d52_690bcbcd70e0baabb374fddd_TIM.webp' },
+  { name: 'Escenario GNP', slug: 'escenario-gnp', img: '68eff2d03f79b9ba9e33dd9a_Escenario_Auditorio_Pabello_n_M.avif' },
+  { name: 'Televisa Monterrey', slug: 'televisa', img: '6998a3b28cda38a8275b7a12_690bcbabb2040defe01e948a_TELEVISA.webp' },
+  { name: 'UBER', slug: 'uber', img: '6998a3b352797ae5b0f0f88b_690bcbd7e9261be9bc878e82_UBER.webp' },
+  { name: 'BBVA', slug: 'bbva-sucursal', img: '6998a3b0c7667436397b04f7_690a8bee733e2fecd4b3b307_BBVA.webp' },
+  { name: 'El Muelle de al lado', slug: 'el-muelle-de-al-lado', img: '6998a3b0ae391a02699e17ba_690bca2316f5c9c4ff76fa5e_EL_20MUELLE.webp' },
+  { name: 'InverCap', slug: 'invercap-afore', img: '6998a3b1bc1fa4d52a838f8d_690a8b69b5cf862c7d8a4cd4_AFORE_20INVERCAP.webp' },
+  { name: 'Telcel', slug: 'telcel', img: '6998a3b209ed57f18df46a2e_690bcb9c80dfd32eefed99bc_WhatsApp_20Image_202025-10-30_20at_2012.00.43_20PM_20_1_.webp' },
+  { name: 'Sky Kids', slug: 'sky-kids', img: '6998a3b2b156d506acd82a81_68f0046dec5dcd156e6f957b_pantalla_013.webp' },
+  { name: 'Restaurante Latino', slug: 'restaurante-latino', img: '6998a3b1825f37590e6c644d_690bcb0370e0baabb374d8e0_RESTAURANTE_20LATINO.webp' },
+  { name: 'Camposanto', slug: 'camposanto', img: '6998a3b0ff85d61e4cf1fc7c_690a8c2ecde95248b77c5265_CAMPOSANTO.webp' },
+  { name: 'Centro de Innovación y Emprendimiento', slug: 'centro-de-innovacion-y-emprendimiento-municipio-de-monterrey', img: '6998a423fac772763fe99c16_Centro_Emprendemos.webp' },
+];
+
+const cardImages = [
+  '/images/68efe4143ee020da527b37b4_Pabello_n_M__Interiores_-JUL25-12.avif',
+  '/images/68efe414dd36f639913584fa_Pabello_n_M__Interiores_-JUL25-01.avif',
+  '/images/68efe4141454578cc9291417_Pabello_n_M__Interiores_-JUL25-02.avif',
+];
+---
+
+<Layout title="Pabellón M.">
+  <!-- Hero -->
+  <header class="section_header100 color-scheme-3">
+    <div class="header100_color-wrapper">
+      <div class="header100_color is-blue"></div>
+      <div class="header100_color is-green"></div>
+      <div class="header100_color is-orange"></div>
+      <div class="header100_color is-purple"></div>
+      <div class="header100_color is-red"></div>
+      <div class="header100_color is-dark"></div>
+    </div>
+    <div class="padding-global">
+      <div class="header100_component">
+        <div class="header100_card">
+          <div class="header100_card-content">
+            <div class="max-width-xlarge">
+              <div class="text-align-center">
+                <div class="margin-bottom margin-small">
+                  <h1 class="heading-style-h0">{home.hero.title}</h1>
+                </div>
+                <div class="max-width-medium align-center">
+                  <p class="text-size-medium text-wrap-balance">{home.hero.subtitle}</p>
+                </div>
+              </div>
+            </div>
+            <div class="margin-top margin-medium">
+              <div class="button-group is-center">
+                <a href="/nosotros" class="button is-alternate">Conócenos</a>
+                <a href="/directorio" class="button is-secondary is-alternate">Directorio</a>
+              </div>
+            </div>
+          </div>
+          <div class="header100_background-video-wrapper">
+            <div class="video-overlay-layer">
+              <img src="/images/68efe24bc39ef6a763b37516_m_icon-cropped.svg" loading="lazy" alt="" class="icon_bg-image" />
+            </div>
+            <div class="header100_background-video" style={`background-image: url('/images/68ef0ffdf572c270a5ec825f_6928e13c72f9d5720511d76b_PM_hero_poster.0000000.jpg'); background-size: cover; background-position: center;`}></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Marquee Banner -->
+  <section class="section_banner-marquee color-scheme-3">
+    <div class="padding-section-large">
+      <div class="banner-top_component">
+        <div class="banner-top_wrapper">
+          <div class="banner-top_track">
+            {[...marqueeTop, ...marqueeTop].map((item) => (
+              <div class="marquee_item">
+                <div class="marquee_image-wrapper">
+                  {item.img ? (
+                    <img src={`/images/${item.img}`} loading="lazy" alt={item.name} class="marquee_image" />
+                  ) : (
+                    <div class="marquee_image"></div>
+                  )}
+                </div>
+                <a class="marquee-link" href={`/directorio#${item.slug}`}>
+                  <span class="marquee_text">{item.name}</span>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div class="banner-bottom_component">
+        <div class="banner-bottom_wrapper">
+          <div class="banner-bottom_track">
+            {[...marqueeBottom, ...marqueeBottom].map((item) => (
+              <div class="marquee_item">
+                <div class="marquee_image-wrapper">
+                  {item.img ? (
+                    <img src={`/images/${item.img}`} loading="lazy" alt={item.name} class="marquee_image" />
+                  ) : (
+                    <div class="marquee_image"></div>
+                  )}
+                </div>
+                <a class="marquee-link" href={`/directorio#${item.slug}`}>
+                  <span class="marquee_text">{item.name}</span>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Hero - "Donde la vida urbana cobra sentido" -->
+  <header class="section_header62 color-scheme-1">
+    <div class="padding-global z-index-1">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="header62_component">
+            <div class="text-align-center">
+              <div class="max-width-large align-center">
+                <div class="margin-bottom margin-medium">
+                  <img src="/images/68efe1ddbc9a84047c2b9718_m_icon.svg" loading="lazy" alt="" class="icon-1x1-medium" />
+                </div>
+                <div class="margin-bottom margin-small">
+                  <h1 class="heading-style-h1">{home.secondaryHeading}</h1>
+                </div>
+                <div class="max-width-medium align-center">
+                  <p class="text-size-medium text-color-white50">{home.secondaryIntro}</p>
+                </div>
+                <div class="margin-top margin-medium">
+                  <div class="button-group is-center">
+                    <a href="/nosotros" class="button">Conoce nuestra historia</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="icon_bg-wrapper">
+      <img src="/images/68efe0641b8f6e393a588cb6_pm_icon.svg" loading="lazy" alt="" class="icon_bg-image" />
+    </div>
+  </header>
+
+  <!-- Layout520 - Cards -->
+  <section class="section_layout520 color-scheme-3">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="layout520_component">
+            <div class="margin-bottom margin-xxlarge">
+              <div class="text-align-center">
+                <div class="max-width-large align-center">
+                  <div class="margin-bottom margin-small">
+                    <h2 class="heading-style-h2">{home.secondarySubheading}</h2>
+                  </div>
+                  <p class="text-size-medium">{home.secondaryDescription}</p>
+                </div>
+              </div>
+            </div>
+            <div class="layout520_grid-list">
+              <div class="layout520_row">
+                {home.sections.map((section, i) => (
+                  <div class="layout520_card text-color-white">
+                    <div class="layout520_background-image-wrapper">
+                      <div class="image-overlay-layer"></div>
+                      <img src={cardImages[i]} loading="lazy" alt={section.title} class="layout520_background-image" />
+                    </div>
+                    <div class="layout520_card-content">
+                      <div class="layout520_card-content-top">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h4">{section.title}</h3>
+                        </div>
+                        <p>{section.description}</p>
+                      </div>
+                      <div class="margin-top margin-small">
+                        <div class="button-group">
+                          <a href={section.link} class="button is-secondary is-alternate">Ver más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section_cta3 text-color-white">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="cta3_component">
+            <div class="max-width-large">
+              <div class="margin-bottom margin-small">
+                <h2 class="heading-style-h2">{home.cta.heading}</h2>
+              </div>
+              <div class="max-width-medium">
+                <p class="text-size-medium">{home.cta.description}</p>
+              </div>
+              <div class="margin-top margin-medium">
+                <div class="button-group">
+                  <a href="/contacto" class="button is-alternate">Contáctanos</a>
+                  <a href="/directorio" class="button is-alternate is-secondary">Ver directorio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta3_background-image-wrapper">
+      <div class="image-overlay-layer"></div>
+      <img src="/images/68efe3b38723b1875b5ddfa3_Pabellon_M_Interiors_Jul_25_2014.avif" loading="lazy" alt="" class="cta3_background-image" />
+    </div>
+  </section>
+</Layout>

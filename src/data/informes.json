@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "title": "Sé parte de este gran destino",
+    "subtitle": "Conoce las oportunidades que ofrecemos para marcas, negocios y servicios. Nuestro equipo está listo para ayudarte a encontrar el espacio ideal para crecer."
+  },
+  "services": [
+    {
+      "title": "Espacios publicitarios",
+      "features": [
+        {
+          "title": "Visibilidad",
+          "description": "Impacta a un público constante en un punto clave de la ciudad."
+        },
+        {
+          "title": "Audiencia diversa",
+          "description": "Llega a visitantes, residentes y empresas en un mismo espacio."
+        },
+        {
+          "title": "Opciones flexibles",
+          "description": "Elige el formato que mejor se adapte a tu campaña."
+        }
+      ],
+      "link": "/contacto"
+    },
+    {
+      "title": "Locales y oficinas",
+      "features": [
+        {
+          "title": "Diseño adaptable",
+          "description": "Espacios que se ajustan a tus necesidades."
+        },
+        {
+          "title": "Ubicación privilegiada",
+          "description": "En el corazón de Monterrey, con gran conectividad."
+        },
+        {
+          "title": "Entorno dinámico",
+          "description": "Servicios y amenidades que favorecen el crecimiento."
+        }
+      ],
+      "link": "/contacto"
+    },
+    {
+      "title": "Comercios y servicios",
+      "features": [
+        {
+          "title": "Flujo constante",
+          "description": "Acceso a miles de visitantes diarios."
+        },
+        {
+          "title": "Oferta integral",
+          "description": "Comparte espacio con restaurantes, bancos y entretenimiento."
+        },
+        {
+          "title": "Ambiente atractivo",
+          "description": "Un lugar diseñado para atraer y retener clientes."
+        }
+      ],
+      "link": "/contacto"
+    }
+  ]
+}

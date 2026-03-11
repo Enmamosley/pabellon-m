@@ -1,0 +1,122 @@
+---
+import Layout from '../layouts/Layout.astro';
+import mapa from '../data/mapa.json';
+
+const floorImages: Record<string, string> = {
+  N7: '/images/mapa_N7.avif',
+  N5: '/images/mapa_N5.avif',
+  N4: '/images/mapa_N4.avif',
+  N3: '/images/mapa_N3.avif',
+  N2: '/images/mapa_N2.avif',
+  PB: '/images/mapa_PB.avif',
+  E1: '/images/mapa_E1.avif',
+  E2: '/images/mapa_E2.avif',
+  E3: '/images/mapa_E3.avif',
+};
+---
+
+<Layout title="Mapa — Pabellón M">
+  <section class="section_layout505 color-scheme-4">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="padding-section-medium padding-bottom">
+            <div class="layout505_component">
+              <div class="margin-bottom margin-xxlarge">
+                <div class="text-align-center">
+                  <div class="margin-bottom margin-small">
+                    <h1 class="heading-style-h1">{mapa.hero.title}</h1>
+                  </div>
+                  <div class="max-width-medium align-center">
+                    <p class="text-size-medium">{mapa.hero.subtitle}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="layout505_tabs">
+                <div class="layout505_tabs-menu">
+                  {mapa.levels.map((level) => (
+                    <a
+                      data-tab={level.tabId}
+                      class:list={['layout505_tab-link', level.tabId === 'PB' && 'is-active']}
+                    >
+                      <div>{level.name}</div>
+                    </a>
+                  ))}
+                </div>
+
+                <div class="layout505_tabs-content">
+                  {mapa.levels.map((level) => (
+                    <div
+                      data-pane={level.tabId}
+                      class:list={['layout505_tab-pane', level.tabId !== 'PB' && 'is-hidden']}
+                    >
+                      <div class="layout505_tab-content">
+                        <div class="layout505_tab-content-top">
+                          <div class="margin-bottom margin-small">
+                            <h3 class="heading-style-h3">{level.name}</h3>
+                          </div>
+                          <div class="divider-horizontal"></div>
+                          <div class="margin-top margin-small">
+                            <div class="map_wrapper">
+                              <div role="list" class="map_list">
+                                {level.locales.map((local) => (
+                                  <div role="listitem" class="map_item-wrapper">
+                                    <div class="map_number-wrapper">
+                                      <div class="text-size-tiny">{local.number}</div>
+                                    </div>
+                                    <div class="text-size-small">{local.name}</div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout505_map-wrapper">
+                          <img
+                            src={floorImages[level.tabId]}
+                            alt={`Plano nivel ${level.name}`}
+                            loading="lazy"
+                            class="layout505_map"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header64_color-wrapper">
+      <div class="header100_color is-blue"></div>
+      <div class="header100_color is-green"></div>
+      <div class="header100_color is-orange"></div>
+      <div class="header100_color is-purple"></div>
+      <div class="header100_color is-red"></div>
+      <div class="header100_color is-dark"></div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const tabs = document.querySelectorAll<HTMLElement>('.layout505_tab-link');
+  const panes = document.querySelectorAll<HTMLElement>('.layout505_tab-pane');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      tabs.forEach((t) => t.classList.remove('is-active'));
+      tab.classList.add('is-active');
+      const id = tab.dataset.tab;
+      panes.forEach((pane) => {
+        if (pane.dataset.pane === id) {
+          pane.classList.remove('is-hidden');
+        } else {
+          pane.classList.add('is-hidden');
+        }
+      });
+    });
+  });
+</script>

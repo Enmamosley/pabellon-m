@@ -1,0 +1,16 @@
+{
+  "slug": "restaurante-latino",
+  "name": "Restaurante Latino",
+  "category": "Restaurantes",
+  "ubicacion": "PB Norte Local 6",
+  "horarios": "Lunes a Sábado de 7:00 a 16:00",
+  "telefonos": [
+    "8120048908"
+  ],
+  "sitioWeb": "https://www.restaurantelatino.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b1825f37590e6c644d_690bcb0370e0baabb374d8e0_RESTAURANTE%2520LATINO.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe39b3e0bf6dcf98bb206_RL.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe39b3e0bf6dcf98bb206_RL-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe39b3e0bf6dcf98bb206_RL.avif 2086w"
+}

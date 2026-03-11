@@ -1,0 +1,14 @@
+{
+  "slug": "escenario-gnp",
+  "name": "Escenario GNP",
+  "category": "Entretenimiento",
+  "ubicacion": "PB Local",
+  "horarios": "Lunes a Sábado de 11:00 a 16:00/ 17:00 a 20:00",
+  "telefonos": [],
+  "sitioWeb": "https://www.escenariognpseguros.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68eff2d03f79b9ba9e33dd9a_Escenario_Auditorio_Pabello%CC%81n_M.avif",
+  "fotoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68eff2d03f79b9ba9e33dd9a_Escenario_Auditorio_Pabello%CC%81n_M-p-500.avif 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68eff2d03f79b9ba9e33dd9a_Escenario_Auditorio_Pabello%CC%81n_M-p-800.avif 800w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68eff2d03f79b9ba9e33dd9a_Escenario_Auditorio_Pabello%CC%81n_M.avif 1200w",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe8a4f5af9caf5ceeb409_00_Logos-16%20(1).avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe8a4f5af9caf5ceeb409_00_Logos-16%20(1)-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe8a4f5af9caf5ceeb409_00_Logos-16%20(1)-p-800.png 800w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe8a4f5af9caf5ceeb409_00_Logos-16%20(1).avif 2330w"
+}

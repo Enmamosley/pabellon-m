@@ -1,0 +1,233 @@
+---
+import Layout from '../layouts/Layout.astro';
+import nosotros from '../data/nosotros.json';
+
+const venueImages = [
+  '/images/68eff941b44b54700cd9766b_gnp.webp',
+  '/images/68eff941c8b8a57597519fe1_Screenshot_2025-09-02_at_1.25.32_p.m..avif',
+  '/images/68eff94221841871d3e1b358_469409957_18255619183280660_2865249333551008879_n.avif',
+];
+---
+
+<Layout title="Nosotros | Pabellón M.">
+  <!-- CTA1 Hero -->
+  <section class="section_cta1 color-scheme-2">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="cta1_component">
+          <div class="cta1_content">
+            <div class="padding-section-large">
+              <div class="cta1_content-left z-index-1">
+                <div class="margin-bottom margin-small">
+                  <h1 class="heading-style-h1">Transformando<br/>la vida urbana</h1>
+                </div>
+                <p class="text-size-medium">{nosotros.intro}</p>
+              </div>
+            </div>
+            <div class="cta1_image-wrapper">
+              <img src="/images/691781d0777e33682ba3a3b0_escenario_PSH.avif" loading="lazy" alt="" class="cta1_image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layout484 - Scroll animated text -->
+  <section class="section_layout484 color-scheme-3">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="layout484_component">
+            <div class="max-width-xlarge align-center">
+              <h2 class="layout484_text">{nosotros.hero.subtitle}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script is:inline src="https://unpkg.com/split-type"></script>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      gsap.registerPlugin(ScrollTrigger);
+
+      function isMobile() {
+        return window.innerWidth <= 767;
+      }
+
+      // ---- Layout484: word-by-word scroll reveal ----
+      var layoutText = new SplitType(".layout484_text", { types: "words" });
+      var startValue = isMobile() ? "top 35%" : "top center";
+      var endValue = isMobile() ? "bottom 90%" : "bottom center";
+
+      gsap.timeline().from(layoutText.words, {
+        opacity: 0.25,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: ".section_layout484",
+          start: startValue,
+          end: endValue,
+          scrub: 2
+        }
+      });
+
+      // ---- Layout518: scroll-linked parallax (desktop only) ----
+      if (!isMobile()) {
+        var component518 = document.querySelector('.layout518_component');
+        if (component518) {
+          // Use the full 250vh component as trigger 
+          var tl518 = gsap.timeline({
+            scrollTrigger: {
+              trigger: component518,
+              start: "top top",
+              end: "bottom bottom",
+              scrub: true
+            }
+          });
+
+          // At 0%: initial full-screen state
+          tl518.fromTo(".layout518_card-large",
+            { width: "100vw", height: "100vh", x: "-5%", y: "-5%", borderRadius: "0px" },
+            { width: "55vw", height: "90vh", x: "0%", y: "0%", borderRadius: "var(--radius-large)", duration: 0.37, ease: "none" },
+            0.08
+          );
+
+          tl518.fromTo(".layout518_cards-wrapper",
+            { y: "-5%", opacity: 0 },
+            { y: "0%", opacity: 1, duration: 0.37, ease: "none" },
+            0.08
+          );
+
+          tl518.fromTo(".layout518_card-small-top",
+            { x: "30%" },
+            { x: "0%", duration: 0.12, ease: "none" },
+            0.38
+          );
+
+          tl518.fromTo(".layout518_card-small-bottom",
+            { x: "60%" },
+            { x: "0%", duration: 0.12, ease: "none" },
+            0.40
+          );
+        }
+      }
+    });
+  </script>
+
+  <!-- Layout518 - Features -->
+  <section class="section_layout518">
+    <div class="layout518_component">
+      <div class="layout518_content">
+        <div class="layout518_grid-list">
+          <section class="layout518_card-large text-color-white">
+            <div class="layout518_card-content">
+              <div class="max-width-medium">
+                <div class="text-align-center">
+                  <div class="margin-bottom margin-medium">
+                    <div class="layout518_icon-wrapper">
+                      <img src="/images/68efe0641b8f6e393a588cb6_pm_icon.svg" loading="lazy" alt="" class="icon-1x1-medium" />
+                    </div>
+                  </div>
+                  <div class="margin-bottom margin-small">
+                    <h3 class="heading-style-h2">{nosotros.features[0].title}</h3>
+                  </div>
+                  <p class="text-size-medium">{nosotros.features[0].description}</p>
+                </div>
+              </div>
+            </div>
+            <div class="layout518_background-image-wrapper">
+              <div class="image-overlay-layer"></div>
+              <img src="/images/68eff8df4fb8851fc234ad62_pm_about.avif" loading="lazy" alt="" class="layout518_background-image" />
+            </div>
+          </section>
+          <div class="layout518_cards-wrapper">
+            <div class="layout518_card-small-top">
+              <div class="max-width-medium">
+                <div class="text-align-center">
+                  <div class="margin-bottom margin-xsmall">
+                    <div class="layout518_icon-wrapper">
+                      <div class="icon-embed-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401l-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102l-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637l3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382z" clip-rule="evenodd"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="margin-bottom margin-xsmall">
+                    <h3 class="heading-style-h4">{nosotros.features[1].title}</h3>
+                  </div>
+                  <p class="text-color-white60">{nosotros.features[1].description}</p>
+                </div>
+              </div>
+            </div>
+            <div class="layout518_card-small-bottom">
+              <div class="max-width-medium">
+                <div class="text-align-center">
+                  <div class="margin-bottom margin-xsmall">
+                    <div class="layout518_icon-wrapper">
+                      <div class="icon-embed-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24"><path d="M2.047 14.667a.992.992 0 0 0 .466.607l1.909 1.104v2.199a1 1 0 0 0 1 1h2.199l1.104 1.91a1.002 1.002 0 0 0 1.366.366L12 20.75l1.91 1.104a1.002 1.002 0 0 0 1.366-.366l1.103-1.909h2.199a1 1 0 0 0 1-1V16.38l1.909-1.104a.999.999 0 0 0 .366-1.366L20.75 12l1.104-1.909a1 1 0 0 0-.366-1.366l-1.909-1.104V5.422a1 1 0 0 0-1-1H16.38l-1.103-1.909a1.004 1.004 0 0 0-.607-.466a.994.994 0 0 0-.759.1L12 3.25l-1.909-1.104a.998.998 0 0 0-1.366.365l-1.104 1.91H5.422a1 1 0 0 0-1 1V7.62L2.513 8.725a1.001 1.001 0 0 0-.365 1.366L3.251 12l-1.104 1.909a1.003 1.003 0 0 0-.1.758z" fill="currentColor"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="margin-bottom margin-xsmall">
+                    <h3 class="heading-style-h4">{nosotros.features[2].title}</h3>
+                  </div>
+                  <p class="text-color-white60">{nosotros.features[2].description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout518_ix-trigger"></div>
+    </div>
+  </section>
+  <section class="section_layout520">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-section-large">
+          <div class="layout520_component">
+            <div class="margin-bottom margin-xxlarge">
+              <div class="text-align-center">
+                <div class="max-width-large align-center">
+                  <div class="margin-bottom margin-small">
+                    <h2 class="heading-style-h2">{nosotros.eventsHeading}</h2>
+                  </div>
+                  <p class="text-size-medium">{nosotros.eventsDescription}</p>
+                </div>
+              </div>
+            </div>
+            <div class="layout520_grid-list">
+              <div class="layout520_row">
+                {nosotros.venues.map((venue, i) => (
+                  <div class="layout520_card text-color-white">
+                    <div class="layout520_background-image-wrapper">
+                      <div class="image-overlay-layer"></div>
+                      <img src={venueImages[i]} loading="lazy" alt={venue.title} class="layout520_background-image" />
+                    </div>
+                    <div class="layout520_card-content">
+                      <div class="layout520_card-content-top">
+                        <div class="margin-bottom margin-xsmall">
+                          <h3 class="heading-style-h4">{venue.title}</h3>
+                        </div>
+                        <p>{venue.description}</p>
+                      </div>
+                      <div class="margin-top margin-small">
+                        <div class="button-group">
+                          <a href={venue.link} target="_blank" rel="noopener noreferrer" class="button is-secondary is-alternate">Conoce más</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,17 @@
+{
+  "slug": "el-muelle-de-al-lado",
+  "name": "El Muelle de al lado",
+  "category": "Restaurantes",
+  "ubicacion": "PB Norte Local 3",
+  "horarios": "Lunes a Viernes de 11:00 a 00:00Sábado y Domingo de 11:00 a 13:30",
+  "telefonos": [
+    "8121693233",
+    "8121693234"
+  ],
+  "sitioWeb": "https://www.muelledeallado.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b0ae391a02699e17ba_690bca2316f5c9c4ff76fa5e_EL%2520MUELLE.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe391cc3b9d921713b00e_Muelle.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe391cc3b9d921713b00e_Muelle-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe391cc3b9d921713b00e_Muelle.avif 1688w"
+}

@@ -1,0 +1,17 @@
+{
+  "slug": "banamex",
+  "name": "Banamex",
+  "category": "Servicios",
+  "ubicacion": "E3 Norte Local 35",
+  "horarios": "Lunes a Viernes 9:00 a 16:00",
+  "telefonos": [
+    "8112261131",
+    "8112261132"
+  ],
+  "sitioWeb": "https://www.banamex.com/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b06bfa71e155157cba_690a8c87ae1fafb1070fe0a1_WhatsApp%2520Image%25202025-10-30%2520at%252012.00.44%2520PM%2520(3).webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe37223fcc693a659d073_CB.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe37223fcc693a659d073_CB-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe37223fcc693a659d073_CB-p-800.png 800w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe37223fcc693a659d073_CB-p-1080.png 1080w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe37223fcc693a659d073_CB.avif 2955w"
+}

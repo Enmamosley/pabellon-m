@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos listos para ayudarte. Escríbenos y un miembro de nuestro equipo se pondrá en contacto contigo."
+  },
+  "formFields": [
+    {
+      "name": "nombre",
+      "type": "text",
+      "label": "Nombre"
+    },
+    {
+      "name": "email",
+      "type": "email",
+      "label": "Correo electrónico"
+    },
+    {
+      "name": "telefono",
+      "type": "tel",
+      "label": "Teléfono"
+    },
+    {
+      "name": "mensaje",
+      "type": "textarea",
+      "label": "Mensaje"
+    }
+  ]
+}

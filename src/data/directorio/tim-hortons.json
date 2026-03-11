@@ -1,0 +1,14 @@
+{
+  "slug": "tim-hortons",
+  "name": "Tim Hortons",
+  "category": "Comercios",
+  "ubicacion": "PB Norte Local 19",
+  "horarios": "Lunes a Domingo de 7:00 a 22:00",
+  "telefonos": [],
+  "sitioWeb": "https://timhortonsmx.com/es/index.html",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b232bb2d73ec209d52_690bcbcd70e0baabb374fddd_TIM.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe455f07db44bc8768063_TH.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe455f07db44bc8768063_TH-p-500.png 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe455f07db44bc8768063_TH-p-800.png 800w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe455f07db44bc8768063_TH.avif 2778w"
+}

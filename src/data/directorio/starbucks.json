@@ -1,0 +1,16 @@
+{
+  "slug": "starbucks",
+  "name": "Starbucks",
+  "category": "Comercios",
+  "ubicacion": "PB Sur Local 12",
+  "horarios": "Lunes a Viernes 6:00 a 22:00            Sábado 12:00 a 23:00                           Domingo 9:00 a 22:00",
+  "telefonos": [
+    "5544548942"
+  ],
+  "sitioWeb": "",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b26f3e8b82de9d7d31_690bcb872f1d6aeb64f9daaa_STARBUCKS.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe4c52c1352d339293ccd_Starbucks.avif",
+  "logoSrcset": ""
+}

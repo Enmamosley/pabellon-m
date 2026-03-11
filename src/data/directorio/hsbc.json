@@ -1,0 +1,14 @@
+{
+  "slug": "hsbc",
+  "name": "HSBC",
+  "category": "Servicios",
+  "ubicacion": "E3 Norte Local 33",
+  "horarios": "Lunes a Viernes 9:00 a 16:00",
+  "telefonos": [],
+  "sitioWeb": "https://www.hsbc.com.mx/",
+  "mapa": "https://maps.app.goo.gl/9HK66idWunRyhbkk6",
+  "foto": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/6998a3b18518f3507de0d150_690bca52b9b8c9e1470a710d_HSBC.webp",
+  "fotoSrcset": "",
+  "logo": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe2d994bb7b225867baa2_HSBC.avif",
+  "logoSrcset": "https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe2d994bb7b225867baa2_HSBC-p-500.avif 500w, https://cdn.prod.website-files.com/68ef124b0aee0461bdac29bd/68efe2d994bb7b225867baa2_HSBC.avif 2732w"
+}
