@@ -1,43 +1,65 @@
-# Astro Starter Kit: Minimal
+# Pabellón M
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio web de **Pabellón M**, un desarrollo contemporáneo en Monterrey que reúne negocios, entretenimiento, comercios y servicios en un solo espacio.
+
+🔗 **[Ver sitio en vivo](https://enmamosley.github.io/pabellon-m/)**
+
+## Sobre el proyecto
+
+Réplica del sitio original [pabellonm.com](https://www.pabellonm.com/) construida con Astro y contenido estático extraído del sitio Webflow original. Incluye animaciones GSAP con ScrollTrigger que reproducen las interacciones originales.
+
+## Tecnologías
+
+- **[Astro](https://astro.build/)** v6 — Framework de generación estática
+- **[Tailwind CSS](https://tailwindcss.com/)** v4 — Utilidades CSS junto con clases custom del diseño Webflow
+- **[GSAP](https://gsap.com/)** + ScrollTrigger + SplitType — Animaciones de scroll
+- **GitHub Pages** — Hosting con deploy automático via GitHub Actions
+
+## Estructura
+
+```
+src/
+├── components/       # Nav, Footer
+├── data/
+│   ├── directorio/   # 30 negocios (JSON individuales)
+│   └── *.json        # Datos de cada página (home, nosotros, contacto, etc.)
+├── layouts/          # Layout principal
+├── pages/            # 7 páginas
+├── styles/           # CSS global con design tokens de Webflow
+└── utils/            # Utilidad de mapeo de imágenes CDN → local
+public/
+├── fonts/            # Uniform Regular & Bold (OTF)
+└── images/           # 141 imágenes locales
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Páginas
 
-## 🚀 Project Structure
+| Ruta | Descripción |
+|------|-------------|
+| `/` | Hero, marquee de marcas, secciones de servicios, CTA |
+| `/nosotros` | Historia del proyecto, animaciones de scroll (layout484 + layout518) |
+| `/directorio` | Directorio de los 30 negocios con imágenes y datos |
+| `/mapa` | Planos interactivos por nivel (9 pisos) |
+| `/informes` | Servicios disponibles (espacios, locales, comercios) |
+| `/contacto` | Formulario y datos de contacto |
+| `/legal/aviso-de-privacidad` | Aviso de privacidad |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Desarrollo
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
+npm run dev
+
+# Build de producción
+npm run build
+
+# Preview del build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Deploy
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+El sitio se despliega automáticamente en GitHub Pages al hacer push a `master`. El workflow está en `.github/workflows/deploy.yml`.
