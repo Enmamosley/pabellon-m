@@ -1,5 +1,7 @@
 ---
 import global from '../data/global.json';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <footer class="footer15_component color-scheme-2">
@@ -8,15 +10,15 @@ import global from '../data/global.json';
       <div class="container-large">
         <div class="footer15_top-wrapper">
           <div class="footer15_menu-wrapper">
-            <a href="/" class="footer15_logo-link">
-              <img src="/images/68efd19e84d065f59630f65c_da1ff5f70fbd6dae5031f49900d0b798_pm_logo-white.svg" alt="Pabellón M" class="footer15_logo" />
+            <a href={base} class="footer15_logo-link">
+              <img src={`${base}images/68efd19e84d065f59630f65c_da1ff5f70fbd6dae5031f49900d0b798_pm_logo-white.svg`} alt="Pabellón M" class="footer15_logo" />
             </a>
             <div class="footer15_link-list">
-              <a href="/nosotros" class="footer15_link">Nosotros</a>
-              <a href="/directorio" class="footer15_link">Directorio</a>
-              <a href="/mapa" class="footer15_link">Mapa</a>
-              <a href="/informes" class="footer15_link">Informes</a>
-              <a href="/contacto" class="footer15_link">Contacto</a>
+              <a href={`${base}nosotros`} class="footer15_link">Nosotros</a>
+              <a href={`${base}directorio`} class="footer15_link">Directorio</a>
+              <a href={`${base}mapa`} class="footer15_link">Mapa</a>
+              <a href={`${base}informes`} class="footer15_link">Informes</a>
+              <a href={`${base}contacto`} class="footer15_link">Contacto</a>
             </div>
           </div>
           <div class="footer15_details-wrapper">
@@ -73,11 +75,11 @@ import global from '../data/global.json';
         <div class="footer15_bottom-wrapper">
           <div class="footer15_legal-list">
             <div class="footer15_credit-text">{global.copyright}</div>
-            <a href="/legal/aviso-de-privacidad" class="footer15_legal-link">Aviso de privacidad</a>
+            <a href={`${base}legal/aviso-de-privacidad`} class="footer15_legal-link">Aviso de privacidad</a>
           </div>
           <div class="text-icon-wrapper">
             <div class="footer15_credit-text">Un desarrollo de</div>
-            <img src="/images/6928e31f2c9987142bdda8f4_IDN_Logo.png" alt="IDN" loading="lazy" class="footer15_credit-logo" />
+            <img src={`${base}images/6928e31f2c9987142bdda8f4_IDN_Logo.png`} alt="IDN" loading="lazy" class="footer15_credit-logo" />
           </div>
         </div>
       </div>

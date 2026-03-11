@@ -2,10 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import nosotros from '../data/nosotros.json';
 
+const base = import.meta.env.BASE_URL;
+
 const venueImages = [
-  '/images/68eff941b44b54700cd9766b_gnp.webp',
-  '/images/68eff941c8b8a57597519fe1_Screenshot_2025-09-02_at_1.25.32_p.m..avif',
-  '/images/68eff94221841871d3e1b358_469409957_18255619183280660_2865249333551008879_n.avif',
+  `${base}images/68eff941b44b54700cd9766b_gnp.webp`,
+  `${base}images/68eff941c8b8a57597519fe1_Screenshot_2025-09-02_at_1.25.32_p.m..avif`,
+  `${base}images/68eff94221841871d3e1b358_469409957_18255619183280660_2865249333551008879_n.avif`,
 ];
 ---
 
@@ -25,7 +27,7 @@ const venueImages = [
               </div>
             </div>
             <div class="cta1_image-wrapper">
-              <img src="/images/691781d0777e33682ba3a3b0_escenario_PSH.avif" loading="lazy" alt="" class="cta1_image" />
+              <img src={`${base}images/691781d0777e33682ba3a3b0_escenario_PSH.avif`} loading="lazy" alt="" class="cta1_image" />
             </div>
           </div>
         </div>
@@ -129,7 +131,7 @@ const venueImages = [
                 <div class="text-align-center">
                   <div class="margin-bottom margin-medium">
                     <div class="layout518_icon-wrapper">
-                      <img src="/images/68efe0641b8f6e393a588cb6_pm_icon.svg" loading="lazy" alt="" class="icon-1x1-medium" />
+                      <img src={`${base}images/68efe0641b8f6e393a588cb6_pm_icon.svg`} loading="lazy" alt="" class="icon-1x1-medium" />
                     </div>
                   </div>
                   <div class="margin-bottom margin-small">
@@ -141,7 +143,7 @@ const venueImages = [
             </div>
             <div class="layout518_background-image-wrapper">
               <div class="image-overlay-layer"></div>
-              <img src="/images/68eff8df4fb8851fc234ad62_pm_about.avif" loading="lazy" alt="" class="layout518_background-image" />
+              <img src={`${base}images/68eff8df4fb8851fc234ad62_pm_about.avif`} loading="lazy" alt="" class="layout518_background-image" />
             </div>
           </section>
           <div class="layout518_cards-wrapper">

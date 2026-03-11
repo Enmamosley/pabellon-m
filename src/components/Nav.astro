@@ -1,20 +1,21 @@
 ---
 import global from '../data/global.json';
 
-const currentPath = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname.replace(base.replace(/\/$/, ''), '');
 ---
 
 <div data-collapse="medium" role="banner" class="navbar1_component color-scheme-3">
   <div class="navbar1_container">
-    <a href="/" class="navbar1_logo-link">
-      <img loading="lazy" src="/images/68ef297e785cf2199917e78c_7d8237551b97379b31ebad7751db2084_pm_logo.svg" alt="Pabellón M" class="navbar1_logo" />
+    <a href={base} class="navbar1_logo-link">
+      <img loading="lazy" src={`${base}images/68ef297e785cf2199917e78c_7d8237551b97379b31ebad7751db2084_pm_logo.svg`} alt="Pabellón M" class="navbar1_logo" />
     </a>
     <nav class="navbar1_menu" id="nav-menu">
       <div class="navbar1_menu-links">
-        <a href="/nosotros" class:list={["navbar1_link", { "is-active": currentPath === "/nosotros" }]}>Nosotros</a>
-        <a href="/directorio" class:list={["navbar1_link", { "is-active": currentPath === "/directorio" }]}>Directorio</a>
-        <a href="/mapa" class:list={["navbar1_link", { "is-active": currentPath === "/mapa" }]}>Mapa</a>
-        <a href="/informes" class:list={["navbar1_link", { "is-active": currentPath === "/informes" }]}>Informes</a>
+        <a href={`${base}nosotros`} class:list={["navbar1_link", { "is-active": currentPath === "/nosotros" || currentPath === "/nosotros/" }]}>Nosotros</a>
+        <a href={`${base}directorio`} class:list={["navbar1_link", { "is-active": currentPath === "/directorio" || currentPath === "/directorio/" }]}>Directorio</a>
+        <a href={`${base}mapa`} class:list={["navbar1_link", { "is-active": currentPath === "/mapa" || currentPath === "/mapa/" }]}>Mapa</a>
+        <a href={`${base}informes`} class:list={["navbar1_link", { "is-active": currentPath === "/informes" || currentPath === "/informes/" }]}>Informes</a>
         <div class="navbar1_dropdown">
           <div class="navbar1_dropdown-toggle">
             <div>Más</div>
@@ -33,7 +34,7 @@ const currentPath = Astro.url.pathname;
         </div>
       </div>
       <div class="navbar1_menu-buttons">
-        <a href="/contacto" class="button is-secondary is-small">Contacto</a>
+        <a href={`${base}contacto`} class="button is-secondary is-small">Contacto</a>
       </div>
     </nav>
     <button class="menu-icon1" id="menu-toggle" aria-label="Abrir menú">

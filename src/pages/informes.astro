@@ -2,10 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import informes from '../data/informes.json';
 
+const base = import.meta.env.BASE_URL;
+
 const serviceImages = [
-  '/images/691668ceda4dce0edf58052e_Escenario_GNP-Pabello_n_M-ABR24-19.jpg',
-  '/images/68efe4143ee020da527b37b4_Pabello_n_M__Interiores_-JUL25-12.avif',
-  '/images/68efe4141454578cc9291417_Pabello_n_M__Interiores_-JUL25-02.avif',
+  `${base}images/691668ceda4dce0edf58052e_Escenario_GNP-Pabello_n_M-ABR24-19.jpg`,
+  `${base}images/68efe4143ee020da527b37b4_Pabello_n_M__Interiores_-JUL25-12.avif`,
+  `${base}images/68efe4141454578cc9291417_Pabello_n_M__Interiores_-JUL25-02.avif`,
 ];
 
 const colorSchemes = ['color-scheme-1', 'color-scheme-2', 'color-scheme-3'];
@@ -58,7 +60,7 @@ const colorSchemes = ['color-scheme-1', 'color-scheme-2', 'color-scheme-3'];
                       </div>
                       <div class="margin-top margin-medium">
                         <div class="button-group">
-                          <a href="/contacto" class="button">Contáctanos</a>
+                          <a href={`${base}contacto`} class="button">Contáctanos</a>
                         </div>
                       </div>
                     </div>

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import home from '../data/home.json';
 
+const base = import.meta.env.BASE_URL;
 const marqueeTop = [
   { name: 'Smart Fit', slug: 'smart-fit', img: '6998a3b211721d6ad4f5f4b9_68f00af6eda51ae657bd8caa_Pabellon_MTY_18.webp' },
   { name: 'Sky Kids', slug: 'sky-kids', img: '6998a3b2b156d506acd82a81_68f0046dec5dcd156e6f957b_pantalla_013.webp' },
@@ -49,9 +50,9 @@ const marqueeBottom = [
 ];
 
 const cardImages = [
-  '/images/68efe4143ee020da527b37b4_Pabello_n_M__Interiores_-JUL25-12.avif',
-  '/images/68efe414dd36f639913584fa_Pabello_n_M__Interiores_-JUL25-01.avif',
-  '/images/68efe4141454578cc9291417_Pabello_n_M__Interiores_-JUL25-02.avif',
+  `${base}images/68efe4143ee020da527b37b4_Pabello_n_M__Interiores_-JUL25-12.avif`,
+  `${base}images/68efe414dd36f639913584fa_Pabello_n_M__Interiores_-JUL25-01.avif`,
+  `${base}images/68efe4141454578cc9291417_Pabello_n_M__Interiores_-JUL25-02.avif`,
 ];
 ---
 
@@ -82,16 +83,16 @@ const cardImages = [
             </div>
             <div class="margin-top margin-medium">
               <div class="button-group is-center">
-                <a href="/nosotros" class="button is-alternate">Conócenos</a>
-                <a href="/directorio" class="button is-secondary is-alternate">Directorio</a>
+                <a href={`${base}nosotros`} class="button is-alternate">Conócenos</a>
+                <a href={`${base}directorio`} class="button is-secondary is-alternate">Directorio</a>
               </div>
             </div>
           </div>
           <div class="header100_background-video-wrapper">
             <div class="video-overlay-layer">
-              <img src="/images/68efe24bc39ef6a763b37516_m_icon-cropped.svg" loading="lazy" alt="" class="icon_bg-image" />
+              <img src={`${base}images/68efe24bc39ef6a763b37516_m_icon-cropped.svg`} loading="lazy" alt="" class="icon_bg-image" />
             </div>
-            <div class="header100_background-video" style={`background-image: url('/images/68ef0ffdf572c270a5ec825f_6928e13c72f9d5720511d76b_PM_hero_poster.0000000.jpg'); background-size: cover; background-position: center;`}></div>
+            <div class="header100_background-video" style={`background-image: url('${base}images/68ef0ffdf572c270a5ec825f_6928e13c72f9d5720511d76b_PM_hero_poster.0000000.jpg'); background-size: cover; background-position: center;`}></div>
           </div>
         </div>
       </div>
@@ -108,12 +109,12 @@ const cardImages = [
               <div class="marquee_item">
                 <div class="marquee_image-wrapper">
                   {item.img ? (
-                    <img src={`/images/${item.img}`} loading="lazy" alt={item.name} class="marquee_image" />
+                    <img src={`${base}images/${item.img}`} loading="lazy" alt={item.name} class="marquee_image" />
                   ) : (
                     <div class="marquee_image"></div>
                   )}
                 </div>
-                <a class="marquee-link" href={`/directorio#${item.slug}`}>
+                <a class="marquee-link" href={`${base}directorio#${item.slug}`}>
                   <span class="marquee_text">{item.name}</span>
                 </a>
               </div>
@@ -128,12 +129,12 @@ const cardImages = [
               <div class="marquee_item">
                 <div class="marquee_image-wrapper">
                   {item.img ? (
-                    <img src={`/images/${item.img}`} loading="lazy" alt={item.name} class="marquee_image" />
+                    <img src={`${base}images/${item.img}`} loading="lazy" alt={item.name} class="marquee_image" />
                   ) : (
                     <div class="marquee_image"></div>
                   )}
                 </div>
-                <a class="marquee-link" href={`/directorio#${item.slug}`}>
+                <a class="marquee-link" href={`${base}directorio#${item.slug}`}>
                   <span class="marquee_text">{item.name}</span>
                 </a>
               </div>
@@ -153,7 +154,7 @@ const cardImages = [
             <div class="text-align-center">
               <div class="max-width-large align-center">
                 <div class="margin-bottom margin-medium">
-                  <img src="/images/68efe1ddbc9a84047c2b9718_m_icon.svg" loading="lazy" alt="" class="icon-1x1-medium" />
+                  <img src={`${base}images/68efe1ddbc9a84047c2b9718_m_icon.svg`} loading="lazy" alt="" class="icon-1x1-medium" />
                 </div>
                 <div class="margin-bottom margin-small">
                   <h1 class="heading-style-h1">{home.secondaryHeading}</h1>
@@ -163,7 +164,7 @@ const cardImages = [
                 </div>
                 <div class="margin-top margin-medium">
                   <div class="button-group is-center">
-                    <a href="/nosotros" class="button">Conoce nuestra historia</a>
+                    <a href={`${base}nosotros`} class="button">Conoce nuestra historia</a>
                   </div>
                 </div>
               </div>
@@ -173,7 +174,7 @@ const cardImages = [
       </div>
     </div>
     <div class="icon_bg-wrapper">
-      <img src="/images/68efe0641b8f6e393a588cb6_pm_icon.svg" loading="lazy" alt="" class="icon_bg-image" />
+      <img src={`${base}images/68efe0641b8f6e393a588cb6_pm_icon.svg`} loading="lazy" alt="" class="icon_bg-image" />
     </div>
   </header>
 
@@ -210,7 +211,7 @@ const cardImages = [
                       </div>
                       <div class="margin-top margin-small">
                         <div class="button-group">
-                          <a href={section.link} class="button is-secondary is-alternate">Ver más</a>
+                          <a href={`${base}${section.link.replace(/^\//, '')}`} class="button is-secondary is-alternate">Ver más</a>
                         </div>
                       </div>
                     </div>
@@ -239,8 +240,8 @@ const cardImages = [
               </div>
               <div class="margin-top margin-medium">
                 <div class="button-group">
-                  <a href="/contacto" class="button is-alternate">Contáctanos</a>
-                  <a href="/directorio" class="button is-alternate is-secondary">Ver directorio</a>
+                  <a href={`${base}contacto`} class="button is-alternate">Contáctanos</a>
+                  <a href={`${base}directorio`} class="button is-alternate is-secondary">Ver directorio</a>
                 </div>
               </div>
             </div>
@@ -250,7 +251,7 @@ const cardImages = [
     </div>
     <div class="cta3_background-image-wrapper">
       <div class="image-overlay-layer"></div>
-      <img src="/images/68efe3b38723b1875b5ddfa3_Pabellon_M_Interiors_Jul_25_2014.avif" loading="lazy" alt="" class="cta3_background-image" />
+      <img src={`${base}images/68efe3b38723b1875b5ddfa3_Pabellon_M_Interiors_Jul_25_2014.avif`} loading="lazy" alt="" class="cta3_background-image" />
     </div>
   </section>
 </Layout>

@@ -2,16 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import mapa from '../data/mapa.json';
 
+const base = import.meta.env.BASE_URL;
+
 const floorImages: Record<string, string> = {
-  N7: '/images/mapa_N7.avif',
-  N5: '/images/mapa_N5.avif',
-  N4: '/images/mapa_N4.avif',
-  N3: '/images/mapa_N3.avif',
-  N2: '/images/mapa_N2.avif',
-  PB: '/images/mapa_PB.avif',
-  E1: '/images/mapa_E1.avif',
-  E2: '/images/mapa_E2.avif',
-  E3: '/images/mapa_E3.avif',
+  N7: `${base}images/mapa_N7.avif`,
+  N5: `${base}images/mapa_N5.avif`,
+  N4: `${base}images/mapa_N4.avif`,
+  N3: `${base}images/mapa_N3.avif`,
+  N2: `${base}images/mapa_N2.avif`,
+  PB: `${base}images/mapa_PB.avif`,
+  E1: `${base}images/mapa_E1.avif`,
+  E2: `${base}images/mapa_E2.avif`,
+  E3: `${base}images/mapa_E3.avif`,
 };
 ---
 
